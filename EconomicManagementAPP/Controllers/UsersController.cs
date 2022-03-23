@@ -16,30 +16,20 @@ namespace EconomicManagementAPP.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View();
+            var users = await repositorieUser.getUsers();
+
+            return View(users);
         }
 
-        public IActionResult Create()
-        {
-            return View();
-        }
 
-        public async Task<IActionResult> Create(Users users)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(users);
-            }
-            var userExist = await repositorieUser.Exist(users.Email, users.Id);
-            if (userExist)
-            {
-                ModelState.AddModelError(nameof(users.Email),
-                    $"User with email {users.Email} already exist.");
-                return View(users);
-            }
-            await repositorieUser.Create(users);
-            return RedirectToAction("Index");
-        }
+        // public async Task<IActionResult> Create(Users users)
+        // {
+        //     if (!ModelState.IsValid)
+        //     {
+        //         return View(users);
+        //     }
+        //     var userExist = await repositorieUser.Exist(users.Id);
+        //     return userExist;
+        // }
     }
-
 }
