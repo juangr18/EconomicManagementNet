@@ -19,8 +19,6 @@ namespace EconomicManagementAPP.Services
         {
             connectionString = configuration.GetConnectionString("DefaultConnection");
         }
-
-<<<<<<< HEAD
         public async Task Create(Users users)
         {
             using var connection = new SqlConnection(connectionString);
@@ -34,14 +32,17 @@ namespace EconomicManagementAPP.Services
         {
 
         }
-        public Task<IEnumerable<Users>> getUsers()
-=======
         public async Task<IEnumerable<Users>> getUsers()
->>>>>>> 79a5f89 (Feature: Index flow add)
+
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
                                                     FROM Users");
+        }
+
+        Task<bool> IRepositorieUser.Exist(string Email, int UserId)
+        {
+            throw new NotImplementedException();
         }
     }
 }
