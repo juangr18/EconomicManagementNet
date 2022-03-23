@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo2\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {}
+    "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo2\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {
+    "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo2\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+        "projectUniqueName": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
         "projectName": "EconomicManagementAPP",
-        "projectPath": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo2\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+        "projectPath": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
         "packagesPath": "C:\\Users\\jlmosquerar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo2\\EconomicManagementNet\\EconomicManagementAPP\\obj\\",
+        "outputPath": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo\\EconomicManagementNet\\EconomicManagementAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jlmosquerar\\AppData\\Roaming\\NuGet\\NuGet.Config",
