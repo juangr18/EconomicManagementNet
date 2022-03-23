@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {}
   },
   "projects": {
@@ -16,12 +17,27 @@
         "configFilePaths": [
           "C:\\Users\\jlmosquerar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+    "/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/EconomicManagementAPP.csproj": {}
+  },
+  "projects": {
+    "/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/EconomicManagementAPP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/EconomicManagementAPP.csproj",
+        "projectName": "EconomicManagementAPP",
+        "projectPath": "/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/EconomicManagementAPP.csproj",
+        "packagesPath": "/home/josehm/.nuget/packages/",
+        "outputPath": "/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/josehm/.nuget/NuGet/NuGet.Config"
+>>>>>>> 0061ab7a212248504f8032fcf2547536d13929c2
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,7 +83,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+>>>>>>> 0061ab7a212248504f8032fcf2547536d13929c2
         }
       }
     }
