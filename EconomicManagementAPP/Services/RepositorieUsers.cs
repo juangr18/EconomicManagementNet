@@ -7,6 +7,7 @@ namespace EconomicManagementAPP.Services
     public interface IRepositorieUser
     {
         Task Create(Users users);
+        Task<bool> Exist(string Email, int UserId);
         Task<IEnumerable<Users>> getUsers();
     }
 
@@ -27,6 +28,10 @@ namespace EconomicManagementAPP.Services
                                                         VALUES(@Email, @StandarEmail, @Password); SELECT SCOPE_IDENTITY();", 
                                                         users);
             users.Id = id;
+        }
+        public async Task Exist(string Email, int UserId)
+        {
+
         }
         public Task<IEnumerable<Users>> getUsers()
         {

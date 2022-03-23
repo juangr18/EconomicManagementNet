@@ -16,14 +16,15 @@ namespace EconomicManagementAPP.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View();
+            var users = await repositorieUser.getUsers();
+            return View(users);
         }
 
         public IActionResult Create()
         {
             return View();
         }
-
+        [HttpPost]
         public async Task<IActionResult> Create(Users users)
         {
             if (!ModelState.IsValid)
