@@ -20,7 +20,7 @@ namespace EconomicManagementAPP.Controllers
 
             return View(users);
         }
-
+        [HttpPost]
         public async Task<IActionResult> Create(Users users)
         {
             if (!ModelState.IsValid)

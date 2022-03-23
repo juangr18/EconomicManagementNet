@@ -24,25 +24,25 @@ namespace EconomicManagementAPP.Services
             using var connection = new SqlConnection(connectionString);
             var id = await connection.QuerySingleAsync<int>($@"INSERT INTO Users
                                                         (Email, StandarEmail,Password)
-                                                        VALUES(@Email, @StandarEmail, @Password); SELECT SCOPE_IDENTITY();", 
-                                                        users);
+                                                        VALUES(@Email, @StandarEmail, @Password); SELECT SCOPE_IDENTITY();",
+                                                                users);
             users.Id = id;
-        }
-        public async Task Exist(string Email, int UserId)
-        {
-
-        }
-        public async Task<IEnumerable<Users>> getUsers()
-
-        {
-            using var connection = new SqlConnection(connectionString);
-            return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
-                                                    FROM Users");
         }
 
         Task<bool> IRepositorieUser.Exist(string Email, int UserId)
         {
             throw new NotImplementedException();
         }
+
+        Task<IEnumerable<Users>> IRepositorieUser.getUsers()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    public async Task<IEnumerable<Users>> getUsers()
+    {
+        using var connection = new SqlConnection(connectionString);
+        return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
+                                                    FROM Users");
     }
 }
