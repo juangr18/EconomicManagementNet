@@ -29,20 +29,15 @@ namespace EconomicManagementAPP.Services
             users.Id = id;
         }
 
-        Task<bool> IRepositorieUser.Exist(string Email, int UserId)
+        public async Task<bool> Exist(string Email, int UserId)
         {
-            throw new NotImplementedException();
+            return 1 == 1;
         }
-
-        Task<IEnumerable<Users>> IRepositorieUser.getUsers()
+        public async Task<IEnumerable<Users>> getUsers()
         {
-            throw new NotImplementedException();
-        }
-    }
-    public async Task<IEnumerable<Users>> getUsers()
-    {
-        using var connection = new SqlConnection(connectionString);
-        return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
                                                     FROM Users");
+        }
     }
 }

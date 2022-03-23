@@ -8,61 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EconomicManagementAPP
 build_property.RootNamespace = EconomicManagementAPP
-build_property.ProjectDir = /home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/
+build_property.ProjectDir = F:\NETSanchez\EconomicManagementAPP\EconomicManagementAPP\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP
+build_property.MSBuildProjectDirectory = F:\NETSanchez\EconomicManagementAPP\EconomicManagementAPP
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/AccountTypes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudFR5cGVzL0NyZWF0ZS5jc2h0bWw=
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/AccountTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/AccountTypes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudFR5cGVzL0RlbGV0ZS5jc2h0bWw=
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/AccountTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/AccountTypes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudFR5cGVzL0luZGV4LmNzaHRtbA==
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/AccountTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/AccountTypes/Modify.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudFR5cGVzL01vZGlmeS5jc2h0bWw=
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/AccountTypes/Modify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXE1vZGlmeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/Home/NotFound.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ob3RGb3VuZC5jc2h0bWw=
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/Home/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/Users/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-axpeuyznvx
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ddrsm0u6qz
