@@ -30,7 +30,15 @@ namespace EconomicManagementAPP.Controllers
             {
                 return View(users);
             }
-            var userExist = await repositorieUser.Exist(users.Id)
+            var userExist = await repositorieUser.Exist(users.Email, users.Id);
+            if (userExist)
+            {
+                ModelState.AddModelError(nameof(users.Email),
+                    $"User with email {users.Email} already exist.");
+                return View(users);
+            }
+            await repositorieUser.Create(users);
+            return RedirectToAction("Index");
         }
     }
 
