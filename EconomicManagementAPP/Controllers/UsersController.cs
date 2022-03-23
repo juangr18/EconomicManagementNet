@@ -25,6 +25,10 @@ namespace EconomicManagementAPP.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Create(Users users)
+        {
+
+        }
     }
 
 }

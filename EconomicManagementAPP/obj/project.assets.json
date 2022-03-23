@@ -1598,14 +1598,19 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\jlmosquerar\\.nuget\\packages\\": {}
 =======
     "/home/josehm/.nuget/packages/": {}
 >>>>>>> 0061ab7a212248504f8032fcf2547536d13929c2
+=======
+    "C:\\Users\\juanr\\.nuget\\packages\\": {}
+>>>>>>> d5a837e2ebcd794c96a60889a641a6f60a3840a1
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
       "projectName": "EconomicManagementAPP",
@@ -1618,19 +1623,28 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
 =======
       "projectUniqueName": "/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/EconomicManagementAPP.csproj",
+=======
+      "projectUniqueName": "F:\\NETSanchez\\EconomicManagementAPP\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+>>>>>>> d5a837e2ebcd794c96a60889a641a6f60a3840a1
       "projectName": "EconomicManagementAPP",
-      "projectPath": "/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/EconomicManagementAPP.csproj",
-      "packagesPath": "/home/josehm/.nuget/packages/",
-      "outputPath": "/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/",
+      "projectPath": "F:\\NETSanchez\\EconomicManagementAPP\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+      "packagesPath": "C:\\Users\\juanr\\.nuget\\packages\\",
+      "outputPath": "F:\\NETSanchez\\EconomicManagementAPP\\EconomicManagementAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "/home/josehm/.nuget/NuGet/NuGet.Config"
 >>>>>>> 0061ab7a212248504f8032fcf2547536d13929c2
+=======
+        "C:\\Users\\juanr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> d5a837e2ebcd794c96a60889a641a6f60a3840a1
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1677,10 +1691,14 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
 >>>>>>> 0061ab7a212248504f8032fcf2547536d13929c2
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+>>>>>>> d5a837e2ebcd794c96a60889a641a6f60a3840a1
       }
     }
   }

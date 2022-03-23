@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EconomicManagementAPP.Models
 {
-    public class User
+    public class Users
     {
         public int Id { get; set; }
 
