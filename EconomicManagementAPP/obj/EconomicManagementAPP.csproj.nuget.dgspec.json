@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\NETSanchez\\EconomicManagementAPP\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {}
   },
   "projects": {
-    "F:\\NETSanchez\\EconomicManagementAPP\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NETSanchez\\EconomicManagementAPP\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
         "projectName": "EconomicManagementAPP",
-        "projectPath": "F:\\NETSanchez\\EconomicManagementAPP\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
-        "packagesPath": "C:\\Users\\juanr\\.nuget\\packages\\",
-        "outputPath": "F:\\NETSanchez\\EconomicManagementAPP\\EconomicManagementAPP\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\EconomicManagementNet\\EconomicManagementAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juanr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
