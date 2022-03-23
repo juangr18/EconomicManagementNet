@@ -175,3 +175,11 @@ F:\NETSanchez\EconomicManagementAPP\EconomicManagementAPP\obj\Debug\net6.0\refin
 F:\NETSanchez\EconomicManagementAPP\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.pdb
 F:\NETSanchez\EconomicManagementAPP\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.genruntimeconfig.cache
 F:\NETSanchez\EconomicManagementAPP\EconomicManagementAPP\obj\Debug\net6.0\ref\EconomicManagementAPP.dll
+C:\Users\jlmosquerar\Desktop\TrabajoEquipo\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.csproj.AssemblyReference.cache
+C:\Users\jlmosquerar\Desktop\TrabajoEquipo\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jlmosquerar\Desktop\TrabajoEquipo\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.AssemblyInfoInputs.cache
+C:\Users\jlmosquerar\Desktop\TrabajoEquipo\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.AssemblyInfo.cs
+C:\Users\jlmosquerar\Desktop\TrabajoEquipo\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.csproj.CoreCompileInputs.cache
+C:\Users\jlmosquerar\Desktop\TrabajoEquipo\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jlmosquerar\Desktop\TrabajoEquipo\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.RazorAssemblyInfo.cache
+C:\Users\jlmosquerar\Desktop\TrabajoEquipo\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.RazorAssemblyInfo.cs
