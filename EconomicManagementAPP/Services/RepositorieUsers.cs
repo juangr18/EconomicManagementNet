@@ -7,7 +7,6 @@ namespace EconomicManagementAPP.Services
     public interface IRepositorieUser
     {
         Task Create(Users users);
-        Task<bool> Exist(string Email, int UserId);
         Task<IEnumerable<Users>> getUsers();
     }
 
@@ -20,24 +19,17 @@ namespace EconomicManagementAPP.Services
             connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-<<<<<<< HEAD
         public async Task Create(Users users)
         {
             using var connection = new SqlConnection(connectionString);
             var id = await connection.QuerySingleAsync<int>($@"INSERT INTO Users
                                                         (Email, StandarEmail,Password)
-                                                        VALUES(@Email, @StandarEmail, @Password); SELECT SCOPE_IDENTITY();", 
-                                                        users);
+                                                        VALUES(@Email, @StandarEmail, @Password); SELECT SCOPE_IDENTITY();",
+                                                                users);
             users.Id = id;
         }
-        public async Task Exist(string Email, int UserId)
-        {
 
-        }
-        public Task<IEnumerable<Users>> getUsers()
-=======
         public async Task<IEnumerable<Users>> getUsers()
->>>>>>> 79a5f89 (Feature: Index flow add)
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
