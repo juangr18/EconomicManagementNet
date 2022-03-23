@@ -37,7 +37,7 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
-                                                    FROM Users");
+                                                    FROM Users;");
         }
     }
 }
