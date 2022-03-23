@@ -24,14 +24,7 @@ namespace EconomicManagementAPP.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Create(Users users)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(users);
-            }
-            var userExist = await repositorieUser.Exist(users.Id)
-        }
+       
     }
 
 }

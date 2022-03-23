@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ulgiDrZDgZnhb0b4gmOfy/Bbiy4qNv1Dp+tsvo4imNk6L+SghgOSquq5WqX8qrizruVoE4+WgY8bGxHzoCOmOw==",
+  "dgSpecHash": "HgfMQMPVfMnU7By3eNGnPZB964CPq2BHHBR8di3FTuQ+WmuFqIkyp7ShjvkXtZ1IqKCv/TINV2t9LUEbh7X/ug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
+  "projectFilePath": "C:\\Users\\jlmosquerar\\Desktop\\TrabajoEquipo2\\EconomicManagementNet\\EconomicManagementAPP\\EconomicManagementAPP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jlmosquerar\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\jlmosquerar\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
