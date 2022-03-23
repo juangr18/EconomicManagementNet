@@ -20,6 +20,7 @@ namespace EconomicManagementAPP.Controllers
             var accountTypes = await repositorieAccountTypes.getAccounts(userId);
             return View(accountTypes);
         }
+
         public IActionResult Create()
         {
             return View();
