@@ -17,13 +17,15 @@ namespace EconomicManagementAPP.Controllers
         public async Task<IActionResult> Index()
         {
             var users = await repositorieUser.getUsers();
+<<<<<<< HEAD
             return View(users);
         }
+=======
+>>>>>>> 41968cc37c7e95fe1b6c562bc10f552cf1b90213
 
-        public IActionResult Create()
-        {
-            return View();
+            return View(users);
         }
+<<<<<<< HEAD
         [HttpPost]
         public async Task<IActionResult> Create(Users users)
         {
@@ -42,5 +44,18 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index");
         }
     }
+=======
 
+>>>>>>> 41968cc37c7e95fe1b6c562bc10f552cf1b90213
+
+        // public async Task<IActionResult> Create(Users users)
+        // {
+        //     if (!ModelState.IsValid)
+        //     {
+        //         return View(users);
+        //     }
+        //     var userExist = await repositorieUser.Exist(users.Id);
+        //     return userExist;
+        // }
+    }
 }
