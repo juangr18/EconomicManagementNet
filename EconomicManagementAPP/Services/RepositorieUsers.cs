@@ -31,7 +31,12 @@ namespace EconomicManagementAPP.Services
 
         public async Task<bool> Exist(string Email, int UserId)
         {
-            return 1 == 1;
+            using var connection = new SqlConnection(connectionString);
+            var exist = await connection.QueryFirstOrDefaultAsync<int>(@"SELECT 1
+                                                                      FROM Users
+                                                                      WHERE Email = @Email AND UserId = @UserId;",
+                                                                      new { Email, UserId });
+            return exist == 1;
         }
         public async Task<IEnumerable<Users>> getUsers()
         {

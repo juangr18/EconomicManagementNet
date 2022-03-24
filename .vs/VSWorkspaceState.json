@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\EconomicManagementAPP",
+    "\\EconomicManagementAPP\\Validations",
     "\\EconomicManagementAPP\\Views",
     "\\EconomicManagementAPP\\Views\\AccountTypes"
   ],
