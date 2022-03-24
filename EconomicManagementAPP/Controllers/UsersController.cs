@@ -19,10 +19,12 @@ namespace EconomicManagementAPP.Controllers
             var users = await repositorieUser.getUsers();
             return View(users);
         }
+
         public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(Users users)
         {
@@ -47,12 +49,11 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index");
         }
 
-        //Actualizar el Usuario
+        //Actualizar
         [HttpGet]
         public async Task<ActionResult> Modify(int id)
         {
-            
-            var user = await repositorieUser.getUserById(id);
+            var user = await repositorieUser.getAccountById(id);
 
             if (user is null)
             {
@@ -61,26 +62,25 @@ namespace EconomicManagementAPP.Controllers
 
             return View(user);
         }
+
         [HttpPost]
         public async Task<ActionResult> Modify(Users users)
         {
-            
-            var user = await repositorieUser.getUserById(users.Id);
+            var user = await repositorieUser.getAccountById(users.Id);
 
             if (user is null)
             {
                 return RedirectToAction("NotFound", "Home");
             }
 
-            await repositorieUser.Modify(users);
+            await repositorieUser.Modify(users);// el que llega
             return RedirectToAction("Index");
         }
 
         //Eliminar User
         public async Task<IActionResult> Delete(int id)
         {
-
-            var user = await repositorieUser.getUserById(id);
+            var user = await repositorieUser.getAccountById(id);
 
             if (user is null)
             {
@@ -92,8 +92,7 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteUser(int id)
         {
-
-            var user = await repositorieUser.getUserById(id);
+            var user = await repositorieUser.getAccountById(id);
 
             if (user is null)
             {
