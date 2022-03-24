@@ -7,8 +7,17 @@ namespace EconomicManagementAPP.Services
     public interface IRepositorieUser
     {
         Task Create(Users users);
+
         Task<bool> Exist(string Email, int UserId);
+
         Task<IEnumerable<Users>> getUsers();
+
+        Task Modify(Users users);
+
+        Task<Users> getAccountById(int id);
+
+        Task Delete(int id);
+
     }
 
     public class RepositorieUser : IRepositorieUser
@@ -19,6 +28,7 @@ namespace EconomicManagementAPP.Services
         {
             connectionString = configuration.GetConnectionString("DefaultConnection");
         }
+
         public async Task Create(Users users)
         {
             using var connection = new SqlConnection(connectionString);
@@ -33,11 +43,37 @@ namespace EconomicManagementAPP.Services
         {
             return 1 == 1;
         }
+
         public async Task<IEnumerable<Users>> getUsers()
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
                                                     FROM Users;");
+        }
+
+        //Delete
+        public async Task Delete(int id)
+        {
+            using var connection = new SqlConnection(connectionString);
+            await connection.ExecuteAsync("DELETE Users WHERE Id = @Id", new { id });
+        }
+
+        public async Task<Users> getAccountById(int id)
+        {
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryFirstOrDefaultAsync<Users>(@"SELECT Id, Email, StandarEmail
+                                                                    FROM Users
+                                                                    WHERE Id = @Id",
+                                                                    new { id });
+        }
+
+        public async Task Modify(Users users)
+        {
+            using var connection = new SqlConnection(connectionString);
+            await connection.ExecuteAsync(@"UPDATE Users
+                                            SET StandarEmail = @StandarEmail,
+                                            Password = @Password
+                                            WHERE Id = @Id", users);
         }
     }
 }
