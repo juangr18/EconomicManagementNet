@@ -70,11 +70,11 @@ namespace EconomicManagementAPP.Controllers
 
             if (user is null)
             {
-}
-    }
+                return RedirectToAction("NotFound", "Home");
+            }
 
-{
-    return RedirectToAction("Index");
+            await repositorieUser.Modify(users);// el que llega
+            return RedirectToAction("Index");
         }
 
         // Delete User
