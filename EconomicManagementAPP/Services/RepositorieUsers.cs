@@ -9,6 +9,8 @@ namespace EconomicManagementAPP.Services
         Task Create(Users users);
         Task<bool> Exist(string Email);
         Task<IEnumerable<Users>> getUsers();
+        Task Modify(Users users); // Task para Modificar
+        Task<Users> getUserById(int id); // Para obtener el usuario por id
     }
 
     public class RepositorieUser : IRepositorieUser
@@ -43,6 +45,22 @@ namespace EconomicManagementAPP.Services
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
                                                     FROM Users;");
+        }
+
+        //Para Actualizar se necesita obtener el tipo de cuenta por el id
+        public async Task<Users> getUserById(int id)
+        {
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryFirstOrDefaultAsync<Users>(@"
+                                                                Select Id,Email,StandarEmail,Password From Users 
+                                                                WHERE Id = @Id",
+                                                                new { id });
+        }
+        // Actualizar
+        public async Task Modify(Users users)
+        {
+            using var connection = new SqlConnection(connectionString);
+            await connection.ExecuteAsync(@"Update Users set Email = @email, StandarEmail = @StandarEmail, Password = @Password;", users);
         }
     }
 }
