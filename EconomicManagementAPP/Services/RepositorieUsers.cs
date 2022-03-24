@@ -7,7 +7,7 @@ namespace EconomicManagementAPP.Services
     public interface IRepositorieUser
     {
         Task Create(Users users);
-        Task<bool> Exist(string Email, int UserId);
+        Task<bool> Exist(string Email);
         Task<IEnumerable<Users>> getUsers();
         Task Modify(Users users); // Task para Modificar
         Task<Users> getUserById(int id); // Para obtener el usuario por id
@@ -31,9 +31,14 @@ namespace EconomicManagementAPP.Services
             users.Id = id;
         }
 
-        public async Task<bool> Exist(string Email, int UserId)
+        public async Task<bool> Exist(string Email)
         {
-            return 1 == 1;
+            using var connection = new SqlConnection(connectionString);
+            var exist = await connection.QueryFirstOrDefaultAsync<int>(@"SELECT 1
+                                                                      FROM Users
+                                                                      WHERE Email = @Email;",
+                                                                      new { Email });
+            return exist == 1;
         }
         public async Task<IEnumerable<Users>> getUsers()
         {
