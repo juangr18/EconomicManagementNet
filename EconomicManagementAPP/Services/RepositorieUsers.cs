@@ -53,7 +53,7 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryFirstOrDefaultAsync<Users>(@"
-                                                                Select Id,Email,StandarEmail,Password From Users 
+                                                                Select Id,Email,StandarEmail,Password From Users
                                                                 WHERE Id = @Id",
                                                                 new { id });
         }
