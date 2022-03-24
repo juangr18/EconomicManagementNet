@@ -11,6 +11,7 @@ namespace EconomicManagementAPP.Services
         Task<IEnumerable<Users>> getUsers();
         Task Modify(Users users); // Task para Modificar
         Task<Users> getUserById(int id); // Para obtener el usuario por id
+        Task Delete(int id);
     }
 
     public class RepositorieUser : IRepositorieUser
@@ -61,6 +62,12 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             await connection.ExecuteAsync(@"Update Users set Email = @email, StandarEmail = @StandarEmail, Password = @Password;", users);
+        }
+
+        public async Task Delete(int id)
+        {
+            using var connection = new SqlConnection(connectionString);
+            await connection.ExecuteAsync("DELETE Users WHERE Id = @Id", new { id });
         }
     }
 }

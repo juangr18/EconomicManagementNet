@@ -69,5 +69,33 @@ namespace EconomicManagementAPP.Controllers
             await repositorieUser.Modify(users);
             return RedirectToAction("Index");
         }
+
+        //Eliminar User
+        public async Task<IActionResult> Delete(int id)
+        {
+
+            var user = await repositorieUser.getUserById(id);
+
+            if (user is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+
+            return View(user);
+        }
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+
+            var user = await repositorieUser.getUserById(id);
+
+            if (user is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+
+            await repositorieUser.Delete(id);
+            return RedirectToAction("Index");
+        }
     }
 }
