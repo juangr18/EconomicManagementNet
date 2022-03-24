@@ -1,15 +1,10 @@
+@model Users
 
 @{
     ViewData["Title"] = "Modify User";
 }
 
 <h1>Modify user: @Model.Email</h1>
-
-@{
-    ViewData["Title"] = "Modify User account";
-}
-
-<h1>Modify User account: @Model.Email</h1>
 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
 <form asp-action="Modify">

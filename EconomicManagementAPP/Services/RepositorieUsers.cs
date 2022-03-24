@@ -40,10 +40,6 @@ namespace EconomicManagementAPP.Services
             users.Id = id;
         }
 
-        public Task Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task<bool> Exist(string Email)
         {
@@ -67,9 +63,11 @@ namespace EconomicManagementAPP.Services
                                                                     new { id });
         }
 
-        public Task<IEnumerable<Users>> getUsers()
+        public async Task<IEnumerable<Users>> getUsers()
         {
-            throw new NotImplementedException();
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryAsync<Users>(@"SELECT Id, Email, StandarEmail
+                                                    FROM Users;");
         }
 
         public async Task Modify(Users users)
@@ -80,5 +78,12 @@ namespace EconomicManagementAPP.Services
                                             Password = @Password
                                             WHERE Id = @Id", users);
         }
+
+        public async Task Delete(int id)
+        {
+            using var connection = new SqlConnection(connectionString);
+            await connection.ExecuteAsync("DELETE Users WHERE Id = @Id", new { id });
+        }
+
     }
 }
