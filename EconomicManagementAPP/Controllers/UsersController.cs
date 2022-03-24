@@ -37,6 +37,12 @@ namespace EconomicManagementAPP.Controllers
                     $"User with email {users.Email} already exist.");
                 return View(users);
             }
+            if (users.Email == users.StandarEmail)
+            {
+                ModelState.AddModelError(nameof(users.Email),
+                    $"User with email {users.Email} and {users.StandarEmail} are equals.");
+                return View(users);
+            }
             await repositorieUser.Create(users);
             return RedirectToAction("Index");
         }
