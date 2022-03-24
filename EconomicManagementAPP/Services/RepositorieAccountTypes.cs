@@ -26,8 +26,8 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             // Requiere el await - tambien requiere el Async al final de la query
-            var id = await connection.QuerySingleAsync<int>($@"INSERT INTO AccountTypes 
-                                                (Name, UserId, OrderAccount) 
+            var id = await connection.QuerySingleAsync<int>($@"INSERT INTO AccountTypes
+                                                (Name, UserId, OrderAccount)
                                                 VALUES (@Name, @UserId, @OrderAccount); SELECT SCOPE_IDENTITY();", accountTypes);
             accountTypes.Id = id;
         }
@@ -54,6 +54,7 @@ namespace EconomicManagementAPP.Services
                                                             WHERE UserId = @UserId
                                                             ORDER BY OrderAccount", new { UserId });
         }
+
         // Actualizar
         public async Task Modify(AccountTypes accountTypes)
         {
