@@ -61,7 +61,7 @@ namespace EconomicManagementAPP.Services
         public async Task Modify(Users users)
         {
             using var connection = new SqlConnection(connectionString);
-            await connection.ExecuteAsync(@"Update Users set Email = @email, StandarEmail = @StandarEmail, Password = @Password;", users);
+            await connection.ExecuteAsync(@"Update Users set Email = @email, StandarEmail = @StandarEmail, Password = @Password  WHERE Id = @Id;", users);
         }
 
         public async Task Delete(int id)
