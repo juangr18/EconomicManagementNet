@@ -36,18 +36,18 @@ namespace EconomicManagementAPP.Services
             var id = await connection.QuerySingleAsync<int>($@"INSERT INTO Users
                                                         (Email, StandarEmail,Password)
                                                         VALUES(@Email, @StandarEmail, @Password); SELECT SCOPE_IDENTITY();",
-                                                            users);
-    {
-    }
+                                                                users);
+            users.Id = id;
+        }
 
 
-        ic async Task<bool> Exist(string Email)
-    }
+        public async Task<bool> Exist(string Email)
+        {
+            using var connection = new SqlConnection(connectionString);
 
-
-    {
-                                                                  FROM Users
-        WHERE Email = @Email; ",
+            var exist = await connection.QueryFirstOrDefaultAsync<int>(@"SELECT 1
+                                                                      FROM Users
+                                                                      WHERE Email = @Email;",
                                                                       new { Email });
             return exist == 1;
         }
