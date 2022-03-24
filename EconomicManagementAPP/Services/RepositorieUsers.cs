@@ -8,7 +8,7 @@ namespace EconomicManagementAPP.Services
     {
         Task Create(Users users);
 
-        Task<bool> Exist(string Email, int UserId);
+        Task<bool> Exist(string Email);
 
         Task<IEnumerable<Users>> getUsers();
 
@@ -39,14 +39,14 @@ namespace EconomicManagementAPP.Services
             users.Id = id;
         }
 
-        public async Task<bool> Exist(string Email, int UserId)
+        public async Task<bool> Exist(string Email)
         {
             using var connection = new SqlConnection(connectionString);
 
             var exist = await connection.QueryFirstOrDefaultAsync<int>(@"SELECT 1
                                                                       FROM Users
-                                                                      WHERE Email = @Email AND UserId = @UserId;",
-                                                                      new { Email, UserId });
+                                                                      WHERE Email = @Email",
+                                                                      new { Email });
             return exist == 1;
         }
 

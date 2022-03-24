@@ -32,7 +32,7 @@ namespace EconomicManagementAPP.Controllers
             {
                 return View(users);
             }
-            var userExist = await repositorieUser.Exist(users.Email, users.Id);
+            var userExist = await repositorieUser.Exist(users.Email);
             if (userExist)
             {
                 ModelState.AddModelError(nameof(users.Email),
@@ -56,6 +56,21 @@ namespace EconomicManagementAPP.Controllers
 
             return View(user);
         }
+
+        // Hace que la validacion se active automaticamente desde el front
+        // [HttpGet]
+        // public async Task<IActionResult> Check (string Email, string StandarEmail)
+        // {
+        //     var accountTypeExist = await repositorieUser.Exist(, );
+        //
+        //     if (accountTypeExist)
+        //     {
+        //         // permite acciones directas entre front y back
+        //         return Json($"The account {Name} already exist");
+        //     }
+        //
+        //     return Json(true);
+        // }
 
         [HttpPost]
         public async Task<ActionResult> Modify(Users users)
