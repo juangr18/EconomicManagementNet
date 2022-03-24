@@ -1,6 +1,1 @@
-/EconomicManagementAPP/appsettings.Development.json
-/EconomicManagementAPP/.env
-/.vs
-/EconomicManagementAPP/obj
-/EconomicManagementAPP/bin
-/EconomicManagementAPP/.vs
+.vs/*
