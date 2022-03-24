@@ -1,0 +1,236 @@
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/appsettings.Development.json
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/appsettings.json
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.staticwebassets.runtime.json
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.exe
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.deps.json
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.runtimeconfig.json
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.pdb
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.AssemblyReference.cache
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.GeneratedMSBuildEditorConfig.editorconfig
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.AssemblyInfoInputs.cache
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.AssemblyInfo.cs
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.CoreCompileInputs.cache
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.MvcApplicationPartsAssemblyInfo.cache
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.RazorAssemblyInfo.cache
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.RazorAssemblyInfo.cs
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/staticwebassets.build.json
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/staticwebassets.development.json
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/bundle/EconomicManagementAPP.styles.css
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/projectbundle/EconomicManagementAPP.bundle.scp.css
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/refint/EconomicManagementAPP.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.pdb
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.genruntimeconfig.cache
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/ref/EconomicManagementAPP.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Azure.Core.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Azure.Identity.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Dapper.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Drawing.Common.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Runtime.Caching.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Security.Permissions.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Windows.Extensions.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+D:/Repository/Semillero3/dotNet/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.CopyComplete
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/appsettings.json
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/appsettings.Development.json
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.staticwebassets.runtime.json
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.deps.json
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.runtimeconfig.json
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.pdb
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Azure.Core.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Azure.Identity.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Dapper.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/System.Drawing.Common.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/System.Runtime.Caching.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/System.Security.Permissions.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/System.Windows.Extensions.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.AssemblyReference.cache
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.GeneratedMSBuildEditorConfig.editorconfig
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.AssemblyInfoInputs.cache
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.AssemblyInfo.cs
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.CoreCompileInputs.cache
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.MvcApplicationPartsAssemblyInfo.cache
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.RazorAssemblyInfo.cache
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.RazorAssemblyInfo.cs
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/staticwebassets.build.json
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/staticwebassets.development.json
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/bundle/EconomicManagementAPP.styles.css
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/projectbundle/EconomicManagementAPP.bundle.scp.css
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.CopyComplete
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/refint/EconomicManagementAPP.dll
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.pdb
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.genruntimeconfig.cache
+/home/josehm/Repos/csharp_Practice/EconomicManagementNet/EconomicManagementAPP/obj/Debug/net6.0/ref/EconomicManagementAPP.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/appsettings.Development.json
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/appsettings.json
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.staticwebassets.runtime.json
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.exe
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.deps.json
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.runtimeconfig.json
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/EconomicManagementAPP.pdb
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Azure.Core.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Azure.Identity.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Dapper.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Drawing.Common.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Runtime.Caching.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Security.Permissions.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/System.Windows.Extensions.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.AssemblyReference.cache
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.GeneratedMSBuildEditorConfig.editorconfig
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.AssemblyInfoInputs.cache
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.AssemblyInfo.cs
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.CoreCompileInputs.cache
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.MvcApplicationPartsAssemblyInfo.cache
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.RazorAssemblyInfo.cache
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.RazorAssemblyInfo.cs
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/staticwebassets.build.json
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/staticwebassets.development.json
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/bundle/EconomicManagementAPP.styles.css
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/scopedcss/projectbundle/EconomicManagementAPP.bundle.scp.css
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.csproj.CopyComplete
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/refint/EconomicManagementAPP.dll
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.pdb
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/EconomicManagementAPP.genruntimeconfig.cache
+F:/NETSanchez/EconomicManagementAPP/EconomicManagementAPP/obj/Debug/net6.0/ref/EconomicManagementAPP.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\appsettings.json
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\EconomicManagementAPP.staticwebassets.runtime.json
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\EconomicManagementAPP.exe
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\EconomicManagementAPP.deps.json
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\EconomicManagementAPP.runtimeconfig.json
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\EconomicManagementAPP.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\EconomicManagementAPP.pdb
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Dapper.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.RazorAssemblyInfo.cache
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.RazorAssemblyInfo.cs
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\scopedcss\bundle\EconomicManagementAPP.styles.css
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\scopedcss\projectbundle\EconomicManagementAPP.bundle.scp.css
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\refint\EconomicManagementAPP.dll
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.pdb
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\EconomicManagementAPP.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\EconomicManagementNet 2403\EconomicManagementNet\EconomicManagementAPP\obj\Debug\net6.0\ref\EconomicManagementAPP.dll
