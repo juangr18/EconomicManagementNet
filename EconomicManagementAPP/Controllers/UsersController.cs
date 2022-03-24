@@ -17,7 +17,6 @@ namespace EconomicManagementAPP.Controllers
         public async Task<IActionResult> Index()
         {
             var users = await repositorieUser.getUsers();
-
             return View(users);
         }
         public IActionResult Create()
