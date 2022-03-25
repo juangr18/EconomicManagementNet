@@ -60,7 +60,7 @@ namespace EconomicManagementAPP.Services
         public async Task Delete(int id)
         {
             using var connection = new SqlConnection(connectionString);
-            await connection.ExecuteAsync("DELETE Users WHERE Id = @Id", new { id });
+            await connection.ExecuteAsync("DELETE Accounts WHERE Id = @Id", new { id });
         }
     }
 }
