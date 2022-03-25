@@ -13,7 +13,8 @@ namespace EconomicManagementAPP.Services
         Task<OperationTypes> getOperationById(int id); // para el modify
         Task Delete(int id);
     }
-    public class RepositorieOperationTypes :IRepositorieOperationTypes
+
+    public class RepositorieOperationTypes : IRepositorieOperationTypes
     {
         private readonly string connectionString;
 
