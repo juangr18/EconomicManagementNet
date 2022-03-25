@@ -13,19 +13,19 @@ namespace EconomicManagementAPP.Controllers
             this.repositorieAccounts = repositorieAccounts;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<ActionResult> Index()
         {
             var accounts = await repositorieAccounts.GetAccounts();
             return View(accounts);
         }
 
-        public async Task<IActionResult> Create()
+        public async Task<ActionResult> Create()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Accounts accounts)
+        public async Task<ActionResult> Create(Accounts accounts)
         {
             if (!ModelState.IsValid)
             {
@@ -40,6 +40,49 @@ namespace EconomicManagementAPP.Controllers
                 return View(accounts);
             }
             await repositorieAccounts.Create(accounts);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public async Task<ActionResult> Modify(int Id)
+        {
+            var account = await repositorieAccounts.GetAccountsById(Id);
+            if (account is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+            return View(account);
+        }
+        [HttpPost]
+        public async Task<ActionResult> Modify(Accounts accounts)
+        {
+            var account = await repositorieAccounts.GetAccountsById(accounts.Id);
+
+            if (account is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+            await repositorieAccounts.Modify(accounts);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public async Task<ActionResult> Delete(int Id)
+        {
+            var account = await repositorieAccounts.GetAccountsById(Id);
+            if (account is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+            return View(account);
+        }
+        [HttpPost]
+        public async Task<ActionResult> DeleteAccount(int Id)
+        {
+            var account = await repositorieAccounts.GetAccountsById(Id);
+            if (account is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+            await repositorieAccounts.Delete(Id);
             return RedirectToAction("Index");
         }
     }
