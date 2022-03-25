@@ -23,6 +23,7 @@ namespace EconomicManagementAPP.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(Accounts accounts)
         {

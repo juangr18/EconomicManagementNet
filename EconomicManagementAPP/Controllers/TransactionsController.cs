@@ -32,6 +32,11 @@ namespace EconomicManagementAPP.Controllers
             {
                 return View(transaction);
             }
+            transaction.UserId = 1;
+            transaction.AccountId = 1;
+            transaction.OperationTypeId = 1;
+            transaction.CategoryId = 1;
+            transaction.TransactionDate = DateTime.Now;
             await repositorieTransactions.Create(transaction);
             return RedirectToAction("Index");
         }
