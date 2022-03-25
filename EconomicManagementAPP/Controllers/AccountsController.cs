@@ -41,5 +41,27 @@ namespace EconomicManagementAPP.Controllers
             await repositorieAccounts.Create(accounts);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public async Task<IActionResult> Modify(int Id)
+        {
+            var account = await repositorieAccounts.GetAccountsById(Id);
+            if (account is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+            return View(account);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Modify(Accounts accounts)
+        {
+            var account = await repositorieAccounts.GetAccountsById(accounts.Id);
+
+            if (account is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+            await repositorieAccounts.Modify(accounts);
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -42,11 +42,19 @@ namespace EconomicManagementAPP.Services
                     Id, Name, AccountTypeId, Balance, Description
                     FROM Accounts;");
         }
-        public async Task ModifyAccount(Accounts accounts)
+        public async Task<IEnumerable<Accounts>> GetAccountsById(int Id)
         {
             using var connection = new SqlConnection(connectionString);
-            await connection.ExecuteAsync(@"Update Accounts 
-                    set Name=@Name, AccountTypeIdBalance=@AccountTypeIdBalance, Description=@AccountTypeIdBalance
+            return await connection.QueryAsync<Accounts>(
+                @"SELECT 
+                    Id, Name, AccountTypeId, Balance, Description
+                    FROM Accounts WHERE Id=@Id;", new {Id});
+        }
+        public async Task Modify(Accounts accounts)
+        {
+            using var connection = new SqlConnection(connectionString);
+            await connection.ExecuteAsync(@"UPDATE Accounts 
+                        SET Name = @Name, AccountTypeId=@AccountTypeId, Balance=@Balance, Description=@Description
                         WHERE Id = @Id;", accounts);
         }
         public async Task Delete(int id)
