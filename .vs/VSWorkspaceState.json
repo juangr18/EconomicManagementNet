@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\EconomicManagementAPP",
+    "\\EconomicManagementAPP\\Controllers",
     "\\EconomicManagementAPP\\Validations",
     "\\EconomicManagementAPP\\Views",
     "\\EconomicManagementAPP\\Views\\AccountTypes"
   ],
-  "SelectedNode": "\\EconomicManagementAPP.sln",
+  "SelectedNode": "\\EconomicManagementAPP\\Controllers\\UsersController.cs",
   "PreviewInSolutionExplorer": false
 }
