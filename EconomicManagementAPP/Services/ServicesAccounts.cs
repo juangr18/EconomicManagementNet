@@ -42,10 +42,10 @@ namespace EconomicManagementAPP.Services
                     Id, Name, AccountTypeId, Balance, Description
                     FROM Accounts;");
         }
-        public async Task<IEnumerable<Accounts>> GetAccountsById(int Id)
+        public async Task<Accounts> GetAccountsById(int Id)
         {
             using var connection = new SqlConnection(connectionString);
-            return await connection.QueryAsync<Accounts>(
+            return await connection.QueryFirstOrDefaultAsync<Accounts>(
                 @"SELECT 
                     Id, Name, AccountTypeId, Balance, Description
                     FROM Accounts WHERE Id=@Id;", new {Id});
