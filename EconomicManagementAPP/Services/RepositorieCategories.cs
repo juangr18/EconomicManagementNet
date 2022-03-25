@@ -34,8 +34,8 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             var id = await connection.QuerySingleAsync<int>($@"INSERT INTO Categories
-                                                        (Name, OperationId, UserId)
-                                                        VALUES(@Name, @OperationId, @User); SELECT SCOPE_IDENTITY();",
+                                                        (Name, OperationTypeId, UserId)
+                                                        VALUES(@Name, @OperationTypeId, @UserId); SELECT SCOPE_IDENTITY();",
                                                                 categories);
             categories.Id = id;
         }
