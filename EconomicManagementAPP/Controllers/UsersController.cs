@@ -19,10 +19,12 @@ namespace EconomicManagementAPP.Controllers
             var users = await repositorieUser.getUsers();
             return View(users);
         }
+
         public IActionResult Create()
         {
             return View();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -33,6 +35,9 @@ namespace EconomicManagementAPP.Controllers
 
             var user = await repositorieUser.getUsersById(id);
 =======
+=======
+
+>>>>>>> bcc623c4a2e8d01b333ac2614830a0c48b01f27c
         [HttpPost]
         public async Task<IActionResult> Create(Users users)
         {
@@ -57,12 +62,11 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index");
         }
 
-        //Actualizar el Usuario
+        //Actualizar
         [HttpGet]
         public async Task<ActionResult> Modify(int id)
         {
-            
-            var user = await repositorieUser.getUserById(id);
+            var user = await repositorieUser.getAccountById(id);
 
             if (user is null)
             {
@@ -71,27 +75,35 @@ namespace EconomicManagementAPP.Controllers
 
             return View(user);
         }
+
         [HttpPost]
         public async Task<ActionResult> Modify(Users users)
         {
-            
-            var user = await repositorieUser.getUserById(users.Id);
+            var user = await repositorieUser.getAccountById(users.Id);
 
             if (user is null)
             {
                 return RedirectToAction("NotFound", "Home");
             }
 
-            await repositorieUser.Modify(users);
+            await repositorieUser.Modify(users);// el que llega
             return RedirectToAction("Index");
         }
 
+<<<<<<< HEAD
         //Eliminar User
         public async Task<IActionResult> Delete(int id)
         {
 
             var user = await repositorieUser.getUserById(id);
 >>>>>>> 5a4601c4c1bf7c083d9522974e956c4c843def29
+=======
+        // Delete User
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var user = await repositorieUser.getAccountById(id);
+>>>>>>> bcc623c4a2e8d01b333ac2614830a0c48b01f27c
 
             if (user is null)
             {
@@ -103,12 +115,16 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteUser(int id)
         {
+<<<<<<< HEAD
 
 <<<<<<< HEAD
             var user = await repositorieUser.getUsersById(id);
 =======
             var user = await repositorieUser.getUserById(id);
 >>>>>>> 5a4601c4c1bf7c083d9522974e956c4c843def29
+=======
+            var user = await repositorieUser.getAccountById(id);
+>>>>>>> bcc623c4a2e8d01b333ac2614830a0c48b01f27c
 
             if (user is null)
             {
@@ -119,9 +135,12 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index");
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> 5a4601c4c1bf7c083d9522974e956c4c843def29
+=======
+>>>>>>> bcc623c4a2e8d01b333ac2614830a0c48b01f27c
     }
 }

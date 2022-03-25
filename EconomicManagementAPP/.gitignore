@@ -7,9 +7,12 @@
 appsettings.Development.json
 .env
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .vs/
 >>>>>>> 5a4601c4c1bf7c083d9522974e956c4c843def29
+=======
+>>>>>>> bcc623c4a2e8d01b333ac2614830a0c48b01f27c
 # User-specific files
 *.rsuser
 *.suo
