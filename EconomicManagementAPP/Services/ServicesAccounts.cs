@@ -16,12 +16,22 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             var id = await connection.QuerySingleAsync<int>
-                ($@"INSERT INTO Users
-                           (Email, StandarEmail,Password)
-                           VALUES(@Email, @StandarEmail, @Password);
+                ($@"INSERT INTO Accounts
+                           (Name, AccountTypeId, Balance, Description)
+                           VALUES(@Name, @AccountTypeId, @Balance, @Description);
                             SELECT SCOPE_IDENTITY();",
                             accounts);
             accounts.Id = id;
+        }
+
+        public async Task<bool> Exist(string Name, int Id)
+        {
+            using var connection = new SqlConnection(connectionString);
+            var exist = await connection.QueryFirstOrDefaultAsync<int>
+                ($@"SELECT 1
+                        FROM Accounts WHERE Name = @Name AND Id=@Id;", 
+                        new { Name, Id });
+            return exist == 1;
         }
 
         public async Task<IEnumerable<Accounts>> GetAccounts()
