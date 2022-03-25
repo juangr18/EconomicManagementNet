@@ -6,6 +6,10 @@
 # DB connection
 appsettings.Development.json
 .env
+<<<<<<< HEAD
+=======
+.vs/
+>>>>>>> 5a4601c4c1bf7c083d9522974e956c4c843def29
 # User-specific files
 *.rsuser
 *.suo
