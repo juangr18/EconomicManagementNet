@@ -29,7 +29,7 @@ namespace EconomicManagementAPP.Services
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryAsync<Accounts>(
                 @"SELECT 
-                    Id, Name, AccountTypeIdBalance, Description
+                    Id, Name, AccountTypeId, Balance, Description
                     FROM Accounts;");
         }
         public async Task ModifyAccount(Accounts accounts)
