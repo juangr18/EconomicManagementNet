@@ -1,4 +1,5 @@
 using EconomicManagementAPP.Services;
+using EconomicManagementAPP.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IRepositorieAccountTypes, RepositorieAccountTypes>();
 builder.Services.AddTransient<IRepositorieUser, RepositorieUser>();
+builder.Services.AddTransient<IRepositorieAccounts, ServicesAccounts>();
 
 var app = builder.Build();
 
