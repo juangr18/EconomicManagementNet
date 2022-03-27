@@ -13,6 +13,7 @@ namespace EconomicManagementAPP.Services
         Task<AccountTypes> getAccountById(int id, int userId); // para el modify
         Task Delete(int id);
     }
+
     public class RepositorieAccountTypes : IRepositorieAccountTypes
     {
         private readonly string connectionString;
