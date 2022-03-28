@@ -39,6 +39,8 @@ namespace EconomicManagementAPP.Controllers
                     $"User with email {categorie.Name} already exist.");
                 return View(categorie);
             }
+            categorie.OperationTypeId = 1;
+            categorie.UserId = 1;
             await repositorieCategories.Create(categorie);
             return RedirectToAction("Index");
         }

@@ -8,6 +8,9 @@
 
 <a asp-action="Create" class="btn btn-primary mb-3">Create operation</a>
 
+
+@if(Model.Any())
+{
 <table class="table">
     <thead>
         <tr>
@@ -32,3 +35,9 @@
         }
     </tbody>
 </table>
+}@if(!Model.Any()){
+    <h1>
+        No results
+    </h1>
+}
+

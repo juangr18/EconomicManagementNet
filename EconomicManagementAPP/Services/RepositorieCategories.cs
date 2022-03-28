@@ -4,21 +4,6 @@ using Microsoft.Data.SqlClient;
 
 namespace EconomicManagementAPP.Services
 {
-    public interface IRepositorieCategories
-    {
-        Task Create(Categories categories);
-
-        Task<bool> Exist(string Name);
-
-        Task<IEnumerable<Categories>> getCategories();
-
-        Task Modify(Categories categories);
-
-        Task<Categories> getCategorieById(int id);
-
-        Task Delete(int id);
-
-    }
 
     public class RepositorieCategories : IRepositorieCategories
     {
@@ -34,8 +19,8 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             var id = await connection.QuerySingleAsync<int>($@"INSERT INTO Categories
-                                                        (Name, OperationId, UserId)
-                                                        VALUES(@Name, @OperationId, @User); SELECT SCOPE_IDENTITY();",
+                                                        (Name, OperationTypeId, UserId)
+                                                        VALUES(@Name, @OperationTypeId, @UserId); SELECT SCOPE_IDENTITY();",
                                                                 categories);
             categories.Id = id;
         }

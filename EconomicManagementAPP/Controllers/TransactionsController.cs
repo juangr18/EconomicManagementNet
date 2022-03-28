@@ -1,6 +1,8 @@
 using EconomicManagementAPP.Models;
 using EconomicManagementAPP.Repositories;
+using EconomicManagementAPP.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EconomicManagementAPP.Controllers
 {
@@ -8,10 +10,12 @@ namespace EconomicManagementAPP.Controllers
     {
 
         private readonly IRepositorieTransactions repositorieTransactions;
+        private readonly IRepositorieOperationTypes repositorieOperationTypes;
 
-        public TransactionsController(IRepositorieTransactions repositorieTransactions)
+        public TransactionsController(IRepositorieTransactions repositorieTransactions, IRepositorieOperationTypes repositorieOperationTypes)
         {
             this.repositorieTransactions = repositorieTransactions;
+            this.repositorieOperationTypes = repositorieOperationTypes;
         }
 
         public async Task<IActionResult> Index()
@@ -28,10 +32,18 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Transactions transaction)
         {
+            var operationTypesDB = await repositorieOperationTypes.getOperation();
+            ViewBag.message = operationTypesDB.ToList();
+
             if (!ModelState.IsValid)
             {
                 return View(transaction);
             }
+            transaction.UserId = 1;
+            transaction.AccountId = 1;
+            transaction.OperationTypeId = 1;
+            transaction.CategoryId = 1;
+            transaction.TransactionDate = DateTime.Now;
             await repositorieTransactions.Create(transaction);
             return RedirectToAction("Index");
         }

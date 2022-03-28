@@ -6,7 +6,7 @@
 
 <h1>Categories</h1>
 
-<a asp-action="Create" class="btn btn-primary mb-3">Create categorie</a>
+<a asp-action="Create" class="btn btn-primary mb-3">Create category</a>
 
 
 <table class="table">
@@ -18,19 +18,19 @@
     </tr>
   </thead>
   <tbody id="reordenable">
-    @foreach (var categories in Model)
+    @foreach (var category in Model)
     {
             <tr>
                 <td>
-                    <input type="hidden" value="@categories.Id" class="ids" />
-                    <a class="btn btn-primary" asp-action="Modify" asp-route-id="@categories.Id">Modify</a>
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@categories.Id">Delete</a>
+                    <input type="hidden" value="@category.Id" class="ids" />
+                    <a class="btn btn-primary" asp-action="Modify" asp-route-id="@category.Id">Modify</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@category.Id">Delete</a>
                 </td>
                 <td>
-                    @categories.Id
+                    @category.Id
                 </td>
                 <td>
-                  @categories.Name
+                  @category.Name
                 </td>
             </tr>
     }
