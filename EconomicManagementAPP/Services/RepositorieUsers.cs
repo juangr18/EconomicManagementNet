@@ -1,11 +1,10 @@
-
-
 using Dapper;
 using EconomicManagementAPP.Models;
 using Microsoft.Data.SqlClient;
 
 namespace EconomicManagementAPP.Services
 {
+<<<<<<< HEAD
     public interface IRepositorieUser
     {
         Task Create(Users users);
@@ -33,6 +32,8 @@ namespace EconomicManagementAPP.Services
         Task Delete(int id);
 
     }
+=======
+>>>>>>> 74217eeba58d867ff23585214507a0f057a10aa7
 
     public class RepositorieUser : IRepositorieUser
     {

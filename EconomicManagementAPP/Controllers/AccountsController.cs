@@ -52,6 +52,7 @@ namespace EconomicManagementAPP.Controllers
             }
             return View(account);
         }
+
         [HttpPost]
         public async Task<ActionResult> Modify(Accounts accounts)
         {

@@ -8,7 +8,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IRepositorieAccountTypes, RepositorieAccountTypes>();
 builder.Services.AddTransient<IRepositorieUser, RepositorieUser>();
 builder.Services.AddTransient<IRepositorieCategories, RepositorieCategories>();
-builder.Services.AddTransient<IRepositorieAccounts, ServicesAccounts>();
+builder.Services.AddTransient<IRepositorieAccounts, RepositorieAccounts>();
 builder.Services.AddTransient<IRepositorieOperationTypes, RepositorieOperationTypes>();
 builder.Services.AddTransient<IRepositorieTransactions, RepositorieTransactions>();
 builder.Services.AddTransient<IRepositorieCategories, RepositorieCategories>();
