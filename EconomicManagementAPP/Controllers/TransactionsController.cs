@@ -41,7 +41,7 @@ namespace EconomicManagementAPP.Controllers
             }
             transaction.UserId = 1;
             transaction.AccountId = 1;
-            //transaction.OperationTypeId = 1;
+            transaction.OperationTypeId = 1;
             transaction.CategoryId = 1;
             transaction.TransactionDate = DateTime.Now;
             await repositorieTransactions.Create(transaction);
