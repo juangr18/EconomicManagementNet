@@ -6,12 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IRepositorieAccountTypes, RepositorieAccountTypes>();
-builder.Services.AddTransient<IRepositorieUser, RepositorieUser>();
+builder.Services.AddTransient<IRepositorieUsers, RepositorieUser>();
 builder.Services.AddTransient<IRepositorieCategories, RepositorieCategories>();
 builder.Services.AddTransient<IRepositorieAccounts, RepositorieAccounts>();
-builder.Services.AddTransient<IRepositorieOperationTypes, RepositorieOperationTypes>();
+// builder.Services.AddTransient<IRepositorieOperationTypes, RepositorieOperationTypes>();
 builder.Services.AddTransient<IRepositorieTransactions, RepositorieTransactions>();
 builder.Services.AddTransient<IRepositorieCategories, RepositorieCategories>();
+builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

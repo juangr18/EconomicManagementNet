@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 namespace EconomicManagementAPP.Services
 {
 
-    public class RepositorieUser : IRepositorieUser
+    public class RepositorieUser : IRepositorieUsers
     {
         private readonly string connectionString;
 
@@ -14,6 +14,11 @@ namespace EconomicManagementAPP.Services
             connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
+
+        public int GetUserId()
+        {
+            return 1;
+        }
 
         public async Task Create(Users users)
         {

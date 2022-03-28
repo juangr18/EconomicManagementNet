@@ -8,6 +8,10 @@ public interface IRepositorieCategories
 
     Task<IEnumerable<Categories>> getCategories();
 
+    Task<IEnumerable<Categories>> GetCategories(int userId);
+
+    Task<IEnumerable<Categories>> GetCategories(int userId, OperationTypes operationTypes);
+
     Task Modify(Categories categories);
 
     Task<Categories> getCategorieById(int id);
