@@ -1,19 +1,18 @@
-using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
 namespace EconomicManagementAPP.Models
 {
-    public class Users
+    public class Categories
     {
         public int Id { get; set; }
 
         [Required(ErrorMessage = "{0} is required")]
-        public string Email { get; set; }
+        public string Name { get; set; }
 
         [Required(ErrorMessage = "{0} is required")]
-        public string StandarEmail { get; set; }
+        public int OperationTypeId { get; set; }
 
         [Required(ErrorMessage = "{0} is required")]
-        public string Password { get; set; }
+        public int UserId { get; set; }
     }
 }
