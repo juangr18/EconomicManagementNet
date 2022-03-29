@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 namespace EconomicManagementAPP.Services
 {
 
-    public class RepositorieUser : IRepositorieUser
+    public class RepositorieUser : IRepositorieUsers
     {
         private readonly string connectionString;
 
@@ -14,6 +14,11 @@ namespace EconomicManagementAPP.Services
             connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
+
+        public int GetUserId()
+        {
+            return 1;
+        }
 
         public async Task Create(Users users)
         {
@@ -70,5 +75,11 @@ namespace EconomicManagementAPP.Services
             await connection.ExecuteAsync("DELETE Users WHERE Id = @Id", new { id });
         }
 
+        public async Task<Users> Login(string email, string password)
+        {
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryFirstOrDefaultAsync<Users>(@"SELECT * FROM Users WHERE Email = @Email
+                                                            AND Password = @Password", new { email, password });
+        }
     }
 }

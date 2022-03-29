@@ -67,5 +67,16 @@ namespace EconomicManagementAPP.Services
             using var connection = new SqlConnection(connectionString);
             await connection.ExecuteAsync("DELETE Accounts WHERE Id = @Id", new { id });
         }
+
+        public async Task<IEnumerable<Accounts>> GetUserAccounts(int userId)
+        {
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryAsync<Accounts>(@"SELECT Accounts.Id, Accounts.Name, Balance, at.Name AS AccountType
+                                  FROM Accounts
+                                  INNER JOIN AccountTypes at
+                                  ON at.Id = Accounts.AccountTypeId
+                                  WHERE at.UserId = @UserId
+                                  ORDER BY at.OrderAccount", new { userId });
+        }
     }
 }
