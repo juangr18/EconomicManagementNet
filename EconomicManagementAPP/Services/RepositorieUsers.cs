@@ -63,10 +63,14 @@ namespace EconomicManagementAPP.Services
         public async Task Modify(Users users)
         {
             using var connection = new SqlConnection(connectionString);
+<<<<<<< HEAD
             await connection.ExecuteAsync(@"UPDATE Users
                                             SET StandarEmail = @StandarEmail,
                                             Password = @Password
                                             WHERE Id = @Id", users);
+=======
+            await connection.ExecuteAsync(@"Update Users set Email = @email, StandarEmail = @StandarEmail, Password = @Password  WHERE Id = @Id;", users);
+>>>>>>> 8436ac9ab13e21066ecbfaef5902aec74bd8d7b9
         }
 
         public async Task Delete(int id)
