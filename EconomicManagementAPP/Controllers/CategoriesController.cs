@@ -1,7 +1,5 @@
 using EconomicManagementAPP.Models;
-using EconomicManagementAPP.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EconomicManagementAPP.Controllers
 {
@@ -9,22 +7,18 @@ namespace EconomicManagementAPP.Controllers
     {
 
         private readonly IRepositorieCategories repositorieCategories;
-        private readonly IRepositorieOperationTypes repositorieCategoriesOperationTypes;
+        private readonly IRepositorieUsers repositorieUsers;
 
-
-        public CategoriesController(IRepositorieOperationTypes repositorieCategoriesOperationTypes, IRepositorieCategories repositorieCategories)
+        public CategoriesController(IRepositorieUsers repositorieUsers, IRepositorieCategories repositorieCategories)
         {
-            this.repositorieCategoriesOperationTypes = repositorieCategoriesOperationTypes;
             this.repositorieCategories = repositorieCategories;
+            this.repositorieUsers = repositorieUsers;
         }
+
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            
-            var operationType = await repositorieCategoriesOperationTypes.getOperation();
-            var model = new CategorieTypeOperationViewModel();
-            model.OperationType = operationType.Select(x => new SelectListItem(x.Description, x.Id.ToString()));
-            return View(model);
+            return View();
         }
 
         public async Task<IActionResult> Index()
@@ -37,10 +31,12 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Categories categorie)
         {
+
             if (!ModelState.IsValid)
             {
                 return View(categorie);
             }
+
             var categorieExist = await repositorieCategories.Exist(categorie.Name);
             if (categorieExist)
             {
@@ -48,8 +44,8 @@ namespace EconomicManagementAPP.Controllers
                     $"User with email {categorie.Name} already exist.");
                 return View(categorie);
             }
-            categorie.OperationTypeId = 1;
-            categorie.UserId = 1;
+            var userId = repositorieUsers.GetUserId();
+
             await repositorieCategories.Create(categorie);
             return RedirectToAction("Index");
         }
