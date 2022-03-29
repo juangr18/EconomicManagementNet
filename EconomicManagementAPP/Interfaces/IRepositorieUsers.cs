@@ -1,7 +1,7 @@
 
 using EconomicManagementAPP.Models;
 
-public interface IRepositorieUser
+public interface IRepositorieUsers
 {
     Task Create(Users users);
 
@@ -14,5 +14,9 @@ public interface IRepositorieUser
     Task<Users> getAccountById(int id);
 
     Task Delete(int id);
+
+    Task<Users> Login(string email, string password);
+
+    int GetUserId();
 
 }

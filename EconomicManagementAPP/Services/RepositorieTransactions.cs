@@ -17,31 +17,31 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             var id = await connection.QuerySingleAsync<int>
-                ($@"INSERT INTO Transactions
-                           (UserId, TransactionDate, Total, OperationTypeId, Description, AccountId, CategoryId)
-                           VALUES(@UserId, @TransactionDate, @Total, @OperationTypeId, @Description, @AccountId, @CategoryId);
-                            SELECT SCOPE_IDENTITY();",
-                            transactions);
+                (@"Transactions_Insert",
+                            new
+                            {
+                                transactions.UserId,
+                                transactions.TransactionDate,
+                                transactions.Total,
+                                transactions.CategoryId,
+                                transactions.AccountId,
+                                transactions.Description
+                            },
+                              commandType: System.Data.CommandType.StoredProcedure);
+
             transactions.Id = id;
         }
 
-        public async Task<IEnumerable<Transactions>> GetTransactions()
-        {
-            using var connection = new SqlConnection(connectionString);
-            return await connection.QueryAsync<Transactions>(
-                @"SELECT
-                    Id, UserId, TransactionDate, Total, OperationTypeId, Description, AccountId, CategoryId
-                    FROM Transactions;");
-        }
+
 
         public async Task<Transactions> GetTransactionById(int id, int userId)
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryFirstOrDefaultAsync<Transactions>(@"
-                                                                SELECT Id, UserId, TransactionDate, Total, OperationTypeId,Description, AccountId, CategoryId
+                                                                SELECT Id, UserId, TransactionDate, Total, Description, AccountId, CategoryId
                                                                 FROM Transactions
                                                                 WHERE Id = @Id AND UserID = @UserID",
-                                                                  new { id, userId });
+                                                                new { id, userId });
 
         }
 

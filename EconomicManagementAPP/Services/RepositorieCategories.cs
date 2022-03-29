@@ -59,6 +59,18 @@ namespace EconomicManagementAPP.Services
                                                     FROM Categories;");
         }
 
+        public async Task<IEnumerable<Categories>> GetCategories(int userId)
+        {
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryAsync<Categories>(@"SELECT * FROM Categories WHERE UserId = @userId", new { userId });
+        }
+
+        public async Task<IEnumerable<Categories>> GetCategories(int userId, OperationTypes operationTypesId)
+        {
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryAsync<Categories>(@"SELECT * FROM Categories WHERE UserId = @userId AND OperationTypeId = @operationTypesId", new { userId, operationTypesId });
+        }
+
         public async Task Modify(Categories categories)
         {
             using var connection = new SqlConnection(connectionString);

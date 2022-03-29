@@ -1,6 +1,5 @@
 using EconomicManagementAPP.Models;
 using EconomicManagementAPP.Repositories;
-using EconomicManagementAPP.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -8,32 +7,58 @@ namespace EconomicManagementAPP.Controllers
 {
     public class TransactionsController : Controller
     {
-
+        private readonly IRepositorieUsers repositorieUsers;
+        private readonly IRepositorieAccounts repositorieAccounts;
         private readonly IRepositorieTransactions repositorieTransactions;
-        private readonly IRepositorieOperationTypes repositorieOperationTypes;
+        private readonly IRepositorieCategories repositorieCategories;
 
-        public TransactionsController(IRepositorieTransactions repositorieTransactions, IRepositorieOperationTypes repositorieOperationTypes)
+        public TransactionsController(IRepositorieUsers repositorieUsers, IRepositorieAccounts repositorieAccounts, IRepositorieCategories repositorieCategories, IRepositorieTransactions repositorieTransactions)
         {
+            this.repositorieUsers = repositorieUsers;
+            this.repositorieAccounts = repositorieAccounts;
             this.repositorieTransactions = repositorieTransactions;
-            this.repositorieOperationTypes = repositorieOperationTypes;
+            this.repositorieCategories = repositorieCategories;
         }
 
         public async Task<IActionResult> Index()
         {
-            var transactions = await repositorieTransactions.GetTransactions();
-            return View(transactions);
+            // var transactions = await repositorieTransactions.GetTransactions();
+            // return View(transactions);
+            return View();
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            return View();
+            var userId = repositorieUsers.GetUserId();
+            var model = new CreateTransactionViewModel();
+            model.Accounts = await GetAccounts(userId);
+            model.Categories = await GetCategories(userId, model.OperationTypesId);
+            return View(model);
+        }
+
+        private async Task<IEnumerable<SelectListItem>> GetAccounts(int userId)
+        {
+            var accounts = await repositorieAccounts.GetUserAccounts(userId);
+            return accounts.Select(x => new SelectListItem(x.Name, x.Id.ToString()));
+        }
+
+        private async Task<IEnumerable<SelectListItem>> GetCategories(int userId, OperationTypes operationTypes)
+        {
+            var categories = await repositorieCategories.GetCategories(userId, operationTypes);
+            return categories.Select(x => new SelectListItem(x.Name, x.Id.ToString()));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> GetCategories([FromBody] OperationTypes operationTypes)
+        {
+            var userId = repositorieUsers.GetUserId();
+            var categories = await GetCategories(userId, operationTypes);
+            return Ok(categories);
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(Transactions transaction)
         {
-            var operationTypesDB = await repositorieOperationTypes.getOperation();
-            ViewBag.message = operationTypesDB.ToList();
 
             if (!ModelState.IsValid)
             {
@@ -41,7 +66,6 @@ namespace EconomicManagementAPP.Controllers
             }
             transaction.UserId = 1;
             transaction.AccountId = 1;
-            //transaction.OperationTypeId = 1;
             transaction.CategoryId = 1;
             transaction.TransactionDate = DateTime.Now;
             await repositorieTransactions.Create(transaction);

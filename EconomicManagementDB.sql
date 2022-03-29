@@ -41,7 +41,7 @@ CREATE TABLE Categories(
 	[Name] [nvarchar](50) NOT NULL,
 	[OperationTypeId] [int] NOT NULL,
 	[UserId] [int] NOT NULL,
-    CONSTRAINT [FK_Categories_Operations] FOREIGN KEY (OperationTypeId) REFERENCES OperationTypes(Id),
+  CONSTRAINT [FK_Categories_Operations] FOREIGN KEY (OperationTypeId) REFERENCES OperationTypes(Id),
 	CONSTRAINT [FK_Categories_Users] FOREIGN KEY (UserId) REFERENCES Users(Id)
 )
 GO

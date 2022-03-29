@@ -6,8 +6,6 @@ namespace EconomicManagementAPP.Repositories
     {
         Task Create(Transactions transactions);
 
-        Task<IEnumerable<Transactions>> GetTransactions();
-
         Task ModifyTransaction(Transactions transactions);
 
         Task Delete(int Id);
