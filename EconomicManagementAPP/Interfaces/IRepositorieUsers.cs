@@ -15,6 +15,8 @@ public interface IRepositorieUsers
 
     Task Delete(int id);
 
+    Task<Users> Login(string email, string password);
+
     int GetUserId();
 
 }

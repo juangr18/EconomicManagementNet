@@ -1,5 +1,4 @@
 using EconomicManagementAPP.Models;
-using EconomicManagementAPP.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EconomicManagementAPP.Controllers
@@ -23,6 +22,33 @@ namespace EconomicManagementAPP.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel loginViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(loginViewModel);
+            }
+
+            var result = await repositorieUser.Login(loginViewModel.Email, loginViewModel.Password);
+
+            if (result is null)
+            {
+                ModelState.AddModelError(String.Empty, "Wrong Email or Password");
+                return View(loginViewModel);
+            }
+            else
+            {
+                return RedirectToAction("Index", "AccountTypes");
+            }
         }
 
         [HttpPost]

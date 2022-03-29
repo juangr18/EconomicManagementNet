@@ -75,5 +75,11 @@ namespace EconomicManagementAPP.Services
             await connection.ExecuteAsync("DELETE Users WHERE Id = @Id", new { id });
         }
 
+        public async Task<Users> Login(string email, string password)
+        {
+            using var connection = new SqlConnection(connectionString);
+            return await connection.QueryFirstOrDefaultAsync<Users>(@"SELECT * FROM Users WHERE Email = @Email
+                                                            AND Password = @Password", new { email, password });
+        }
     }
 }
