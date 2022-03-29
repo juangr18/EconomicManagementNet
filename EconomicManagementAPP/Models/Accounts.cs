@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EconomicManagementAPP.Validations;
+using System.ComponentModel.DataAnnotations;
 
 namespace EconomicManagementAPP.Models
 {
@@ -10,6 +11,7 @@ namespace EconomicManagementAPP.Models
         [Required(ErrorMessage = "{0} is required")]
         public int AccountTypeId { get; set; }
         [Required(ErrorMessage = "{0} is required")]
+        [NumberValidate]
         public string Balance { get; set; }
         [Required(ErrorMessage = "{0} is required")]
         public string Description { get; set; }
