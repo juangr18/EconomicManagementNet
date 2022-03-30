@@ -9,7 +9,6 @@ builder.Services.AddTransient<IRepositorieAccountTypes, RepositorieAccountTypes>
 builder.Services.AddTransient<IRepositorieUsers, RepositorieUser>();
 builder.Services.AddTransient<IRepositorieCategories, RepositorieCategories>();
 builder.Services.AddTransient<IRepositorieAccounts, RepositorieAccounts>();
-// builder.Services.AddTransient<IRepositorieOperationTypes, RepositorieOperationTypes>();
 builder.Services.AddTransient<IRepositorieTransactions, RepositorieTransactions>();
 builder.Services.AddTransient<IRepositorieCategories, RepositorieCategories>();
 builder.Services.AddAutoMapper(typeof(Program));

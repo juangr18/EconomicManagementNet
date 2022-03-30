@@ -13,7 +13,7 @@ namespace EconomicManagementAPP.Validations
                 return new ValidationResult("The field is numeric type.");
             }
             return Convert.ToDecimal(input) > 0
-                ? ValidationResult.Success : 
+                ? ValidationResult.Success :
                 new ValidationResult("The field is positive.");
         }
     }
