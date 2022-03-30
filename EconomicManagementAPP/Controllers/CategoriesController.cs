@@ -23,7 +23,8 @@ namespace EconomicManagementAPP.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var categories = await repositorieCategories.getCategories();
+            var userId = repositorieUsers.GetUserId();
+            var categories = await repositorieCategories.GetCategories(userId);
             return View(categories);
         }
 
@@ -45,16 +46,16 @@ namespace EconomicManagementAPP.Controllers
                 return View(categorie);
             }
             var userId = repositorieUsers.GetUserId();
-
+            categorie.UserId = userId;
             await repositorieCategories.Create(categorie);
             return RedirectToAction("Index");
         }
 
         //Actualizar
-        [HttpGet]
-        public async Task<ActionResult> Modify(int id)
+        public async Task<IActionResult> Modify(int id)
         {
-            var categorie = await repositorieCategories.getCategorieById(id);
+            var userId = repositorieUsers.GetUserId();
+            var categorie = await repositorieCategories.GetCategorieById(id, userId);
 
             if (categorie is null)
             {
@@ -65,15 +66,23 @@ namespace EconomicManagementAPP.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Modify(Categories categorie)
+        public async Task<IActionResult> Modify(Categories categorie)
         {
-            var categorieDB = await repositorieCategories.getCategorieById(categorie.Id);
+
+            if (!ModelState.IsValid)
+            {
+                return View(categorie);
+            }
+
+            var userId = repositorieUsers.GetUserId();
+            var categorieDB = await repositorieCategories.GetCategorieById(categorie.Id, userId);
 
             if (categorieDB is null)
             {
                 return RedirectToAction("NotFound", "Home");
             }
 
+            categorie.UserId = userId;
             await repositorieCategories.Modify(categorie);
             return RedirectToAction("Index");
         }
@@ -81,7 +90,8 @@ namespace EconomicManagementAPP.Controllers
         //Eliminar Categories
         public async Task<IActionResult> Delete(int id)
         {
-            var categories = await repositorieCategories.getCategorieById(id);
+            var userId = repositorieUsers.GetUserId();
+            var categories = await repositorieCategories.GetCategorieById(id, userId);
 
             if (categories is null)
             {
@@ -93,7 +103,8 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteCategorie(int id)
         {
-            var categorie = await repositorieCategories.getCategorieById(id);
+            var userId = repositorieUsers.GetUserId();
+            var categorie = await repositorieCategories.GetCategorieById(id, userId);
 
             if (categorie is null)
             {

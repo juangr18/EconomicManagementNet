@@ -5,7 +5,7 @@
 }
 
 <h1>Categories</h1>
-
+<h5>Categories help us see what we spend our money on, also where our income comes from.</h5>
 <a asp-action="Create" class="btn btn-primary mb-3">Create category</a>
 
 @if(Model.Any()){
@@ -15,7 +15,6 @@
             <th>Actions</th>
             <th>Name</th>
             <th>Operation Type</th>
-            <th>User ID</th>
         </tr>
     </thead>
     <tbody id="reordenable">
@@ -23,7 +22,6 @@
         {
             <tr>
                 <td>
-                    <input type="hidden" value="@category.Id" class="ids" />
                     <a class="btn btn-primary" asp-action="Modify" asp-route-id="@category.Id">Modify</a>
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@category.Id">Delete</a>
                 </td>
@@ -31,10 +29,8 @@
                     @category.Name
                 </td>
                 <td>
-                    @category.OperationTypeId
+                    @category.OperationTypeId.ToString()
                 </td>
-                <td>
-                    @category.UserId
             </tr>
         }
     </tbody>
