@@ -7,10 +7,16 @@ namespace EconomicManagementAPP.Controllers
     public class AccountsController : Controller
     {
         private IRepositorieAccounts repositorieAccounts;
+        private IRepositorieUsers repositorieUsers;
+        private IRepositorieAccountTypes repositorieAccountTypes;
 
-        public AccountsController(IRepositorieAccounts repositorieAccounts)
+        public AccountsController(IRepositorieAccounts repositorieAccounts,
+                                  IRepositorieUsers repositorieUsers,
+                                  IRepositorieAccountTypes repositorieAccountTypes)
         {
             this.repositorieAccounts = repositorieAccounts;
+            this.repositorieUsers = repositorieUsers;
+            this.repositorieAccountTypes = repositorieAccountTypes;
         }
 
         public async Task<ActionResult> Index()
@@ -19,8 +25,11 @@ namespace EconomicManagementAPP.Controllers
             return View(accounts);
         }
 
+        [HttpGet]
         public async Task<ActionResult> Create()
         {
+            // var userId = repositorieUsers.GetUserId();
+            // var accountType = await repositorieAccountTypes.
             return View();
         }
 
@@ -42,10 +51,11 @@ namespace EconomicManagementAPP.Controllers
             await repositorieAccounts.Create(accounts);
             return RedirectToAction("Index");
         }
-        [HttpGet]
+
         public async Task<ActionResult> Modify(int Id)
         {
-            var account = await repositorieAccounts.GetAccountsById(Id);
+            var userId = repositorieUsers.GetUserId();
+            var account = await repositorieAccounts.GetAccountById(Id, userId);
             if (account is null)
             {
                 return RedirectToAction("NotFound", "Home");
@@ -56,7 +66,8 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<ActionResult> Modify(Accounts accounts)
         {
-            var account = await repositorieAccounts.GetAccountsById(accounts.Id);
+            var userId = repositorieUsers.GetUserId();
+            var account = await repositorieAccounts.GetAccountById(accounts.Id, userId);
 
             if (account is null)
             {
@@ -66,9 +77,11 @@ namespace EconomicManagementAPP.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public async Task<ActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(int Id)
         {
-            var account = await repositorieAccounts.GetAccountsById(Id);
+
+            var userId = repositorieUsers.GetUserId();
+            var account = await repositorieAccounts.GetAccountById(Id, userId);
             if (account is null)
             {
                 return RedirectToAction("NotFound", "Home");
@@ -76,9 +89,10 @@ namespace EconomicManagementAPP.Controllers
             return View(account);
         }
         [HttpPost]
-        public async Task<ActionResult> DeleteAccount(int Id)
+        public async Task<IActionResult> DeleteAccount(int Id)
         {
-            var account = await repositorieAccounts.GetAccountsById(Id);
+            var userId = repositorieUsers.GetUserId();
+            var account = await repositorieAccounts.GetAccountById(Id, userId);
             if (account is null)
             {
                 return RedirectToAction("NotFound", "Home");

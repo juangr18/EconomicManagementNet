@@ -20,7 +20,7 @@ namespace EconomicManagementAPP.Services
             var id = await connection.QuerySingleAsync<int>
                 ($@"INSERT INTO Accounts
                            (Name, AccountTypeId, Balance, Description)
-                           VALUES(@Name, @AccountTypeId, @Balance, @Description);
+                           VALUES(@Name, @AccountTypeId, ABS(@Balance), @Description);
                             SELECT SCOPE_IDENTITY();",
                             accounts);
             accounts.Id = id;
@@ -45,13 +45,15 @@ namespace EconomicManagementAPP.Services
                     FROM Accounts;");
         }
 
-        public async Task<Accounts> GetAccountsById(int Id)
+        public async Task<Accounts> GetAccountById(int id, int userId)
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryFirstOrDefaultAsync<Accounts>(
-                @"SELECT
-                    Id, Name, AccountTypeId, Balance, Description
-                    FROM Accounts WHERE Id=@Id;", new { Id });
+                @"SELECT Accounts.Id, Accounts.Name, Balance, Description, at.Name AS AccountType
+                FROM Accounts
+                INNER JOIN AccountTypes at
+                ON at.Id = Accounts.AccountTypeId
+                WHERE at.UserId = @userId AND Accounts.Id = @id;", new { id, userId });
         }
 
         public async Task Modify(Accounts accounts)

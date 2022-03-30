@@ -29,8 +29,7 @@ namespace EconomicManagementAPP.Controllers
 
         public async Task<IActionResult> Index()
         {
-            // var transactions = await repositorieTransactions.GetTransactions();
-            // return View(transactions);
+
             return View();
         }
 
@@ -64,15 +63,37 @@ namespace EconomicManagementAPP.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Transactions transaction)
+        public async Task<IActionResult> Create(CreateTransactionViewModel model)
         {
-
+            var userId = repositorieUsers.GetUserId();
             if (!ModelState.IsValid)
             {
-                return View(transaction);
+                model.Accounts = await GetAccounts(userId);
+                model.Categories = await GetCategories(userId, model.OperationTypesId);
+                return View(model);
             }
-            transaction.TransactionDate = DateTime.Now;
-            await repositorieTransactions.Create(transaction);
+            var account = await repositorieAccounts.GetAccountById(model.AccountId, userId);
+
+            if (account is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+
+            var category = await repositorieCategories.GetCategorieById(model.CategoryId, userId);
+
+            if (category is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+
+            model.UserId = userId;
+
+            if (model.OperationTypesId == OperationTypes.Expenses)
+            {
+                model.Total *= -1;
+            }
+
+            await repositorieTransactions.Create(model);
             return RedirectToAction("Index");
         }
 
