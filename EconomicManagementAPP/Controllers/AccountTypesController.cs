@@ -6,16 +6,18 @@ namespace EconomicManagementAPP.Controllers
     public class AccountTypesController : Controller
     {
         private readonly IRepositorieAccountTypes repositorieAccountTypes;
+        private readonly IRepositorieUsers repositorieUsers;
 
-        public AccountTypesController(IRepositorieAccountTypes repositorieAccountTypes)
+        public AccountTypesController(IRepositorieAccountTypes repositorieAccountTypes, IRepositorieUsers repositorieUsers)
         {
             this.repositorieAccountTypes = repositorieAccountTypes;
+            this.repositorieUsers = repositorieUsers;
         }
 
         // Creamos index para ejecutar la interfaz
         public async Task<IActionResult> Index()
         {
-            var userId = 1;
+            var userId = repositorieUsers.GetUserId();
             var accountTypes = await repositorieAccountTypes.getAccounts(userId);
             return View(accountTypes);
         }
@@ -33,7 +35,7 @@ namespace EconomicManagementAPP.Controllers
                 return View(accountTypes);
             }
 
-            accountTypes.UserId = 1;
+            var userId = repositorieUsers.GetUserId();
             accountTypes.OrderAccount = 1;
 
             // Validamos si ya existe antes de registrar
@@ -58,8 +60,8 @@ namespace EconomicManagementAPP.Controllers
         [HttpGet]
         public async Task<IActionResult> VerificaryAccountType(string Name)
         {
-            var UserId = 1;
-            var accountTypeExist = await repositorieAccountTypes.Exist(Name, UserId);
+            var userId = repositorieUsers.GetUserId();
+            var accountTypeExist = await repositorieAccountTypes.Exist(Name, userId);
 
             if (accountTypeExist)
             {
@@ -74,7 +76,7 @@ namespace EconomicManagementAPP.Controllers
         [HttpGet]
         public async Task<ActionResult> Modify(int id)
         {
-            var userId = 1;
+            var userId = repositorieUsers.GetUserId();
             var accountType = await repositorieAccountTypes.getAccountById(id, userId);
 
             if (accountType is null)
@@ -87,7 +89,7 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<ActionResult> Modify(AccountTypes accountTypes)
         {
-            var userId = 1;
+            var userId = repositorieUsers.GetUserId();
             var accountType = await repositorieAccountTypes.getAccountById(accountTypes.Id, userId);
 
             if (accountType is null)
@@ -102,7 +104,7 @@ namespace EconomicManagementAPP.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var userId = 1;
+            var userId = repositorieUsers.GetUserId();
             var account = await repositorieAccountTypes.getAccountById(id, userId);
 
             if (account is null)
@@ -115,7 +117,7 @@ namespace EconomicManagementAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteAccount(int id)
         {
-            var userId = 1;
+            var userId = repositorieUsers.GetUserId();
             var account = await repositorieAccountTypes.getAccountById(id, userId);
 
             if (account is null)
