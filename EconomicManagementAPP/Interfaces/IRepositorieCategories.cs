@@ -6,15 +6,13 @@ public interface IRepositorieCategories
 
     Task<bool> Exist(string Name);
 
-    Task<IEnumerable<Categories>> getCategories();
-
     Task<IEnumerable<Categories>> GetCategories(int userId);
 
     Task<IEnumerable<Categories>> GetCategories(int userId, OperationTypes operationTypes);
 
     Task Modify(Categories categories);
 
-    Task<Categories> getCategorieById(int id);
+    Task<Categories> GetCategorieById(int id, int userId);
 
     Task Delete(int id);
 

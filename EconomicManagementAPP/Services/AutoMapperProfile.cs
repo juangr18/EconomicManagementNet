@@ -7,7 +7,7 @@ namespace EconomicManagementAPP.Services
     {
         public AutoMapperProfiles()
         {
-
+            CreateMap<ModifyTransactionViewModel, Transactions>().ReverseMap();
         }
 
     }

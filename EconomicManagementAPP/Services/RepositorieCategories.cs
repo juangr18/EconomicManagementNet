@@ -18,7 +18,7 @@ namespace EconomicManagementAPP.Services
         public async Task Create(Categories categories)
         {
             using var connection = new SqlConnection(connectionString);
-            var id = await connection.QuerySingleAsync<int>($@"INSERT INTO Categories
+            var id = await connection.QuerySingleAsync<int>(@"INSERT INTO Categories
                                                         (Name, OperationTypeId, UserId)
                                                         VALUES(@Name, @OperationTypeId, @UserId); SELECT SCOPE_IDENTITY();",
                                                                 categories);
@@ -43,20 +43,13 @@ namespace EconomicManagementAPP.Services
         }
 
 
-        public async Task<Categories> getCategorieById(int id)
+        public async Task<Categories> GetCategorieById(int id, int userId)
         {
             using var connection = new SqlConnection(connectionString);
-            return await connection.QueryFirstOrDefaultAsync<Categories>(@"SELECT Id, Name, ObjectId, UserId
+            return await connection.QueryFirstOrDefaultAsync<Categories>(@"SELECT Id, Name, OperationTypeId, UserId
                                                                     FROM Categories
-                                                                    WHERE Id = @Id",
-                                                                    new { id });
-        }
-
-        public async Task<IEnumerable<Categories>> getCategories()
-        {
-            using var connection = new SqlConnection(connectionString);
-            return await connection.QueryAsync<Categories>(@"SELECT Id, Name, OperationTypeId, UserId
-                                                    FROM Categories;");
+                                                                    WHERE Id = @Id AND UserId = @userId",
+                                                                    new { id, userId });
         }
 
         public async Task<IEnumerable<Categories>> GetCategories(int userId)
