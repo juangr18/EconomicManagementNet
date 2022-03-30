@@ -1,3 +1,4 @@
+using AutoMapper;
 using EconomicManagementAPP.Models;
 using EconomicManagementAPP.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -11,13 +12,19 @@ namespace EconomicManagementAPP.Controllers
         private readonly IRepositorieAccounts repositorieAccounts;
         private readonly IRepositorieTransactions repositorieTransactions;
         private readonly IRepositorieCategories repositorieCategories;
+        private readonly IMapper mapper;
 
-        public TransactionsController(IRepositorieUsers repositorieUsers, IRepositorieAccounts repositorieAccounts, IRepositorieCategories repositorieCategories, IRepositorieTransactions repositorieTransactions)
+        public TransactionsController(IRepositorieUsers repositorieUsers,
+                                      IRepositorieAccounts repositorieAccounts,
+                                      IRepositorieCategories repositorieCategories,
+                                      IRepositorieTransactions repositorieTransactions,
+                                      IMapper mapper)
         {
             this.repositorieUsers = repositorieUsers;
             this.repositorieAccounts = repositorieAccounts;
             this.repositorieTransactions = repositorieTransactions;
             this.repositorieCategories = repositorieCategories;
+            this.mapper = mapper;
         }
 
         public async Task<IActionResult> Index()
@@ -64,9 +71,6 @@ namespace EconomicManagementAPP.Controllers
             {
                 return View(transaction);
             }
-            transaction.UserId = 1;
-            transaction.AccountId = 1;
-            transaction.CategoryId = 1;
             transaction.TransactionDate = DateTime.Now;
             await repositorieTransactions.Create(transaction);
             return RedirectToAction("Index");

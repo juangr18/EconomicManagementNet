@@ -2,15 +2,15 @@
 
 namespace EconomicManagementAPP.Validations
 {
-    public class FirstCapitalLetter: ValidationAttribute
+    public class FirstCapitalLetter : ValidationAttribute
     {
-        protected override ValidationResult IsValid(Object value, ValidationContext validationContext) 
-        { 
+        protected override ValidationResult IsValid(Object value, ValidationContext validationContext)
+        {
             // eliminar
             if (value == null || string.IsNullOrEmpty(value.ToString()))
             {
                 return ValidationResult.Success;
-            }                           
+            }
             var firstLetter = value.ToString()[0].ToString();
 
             if (firstLetter != firstLetter.ToUpper())

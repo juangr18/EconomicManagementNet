@@ -6,13 +6,17 @@ namespace EconomicManagementAPP.Models
     public class Accounts
     {
         public int Id { get; set; }
+
         [Required(ErrorMessage = "{0} is required")]
         public string Name { get; set; }
+
         [Required(ErrorMessage = "{0} is required")]
         public int AccountTypeId { get; set; }
+
         [Required(ErrorMessage = "{0} is required")]
         [NumberValidate]
         public string Balance { get; set; }
+
         [Required(ErrorMessage = "{0} is required")]
         public string Description { get; set; }
     }

@@ -1,5 +1,4 @@
 ﻿using EconomicManagementAPP.Models;
-using EconomicManagementAPP.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EconomicManagementAPP.Controllers

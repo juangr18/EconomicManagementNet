@@ -29,7 +29,7 @@
 
   <div class="mb-3">
         <label asp-for="CategoryId" class="form-label"></label>
-        <select asp-for="CategoryId" class="form-select" ></select>
+        <select asp-for="CategoryId" asp-items="Model.Categories" class="form-select" ></select>
         <span asp-validation-for="CategoryId" class="text-danger"></span>
     </div>
 
@@ -72,6 +72,6 @@
           const options = json.map(category => `<option value=${category.value}>${category.text}</option>`);
           $("#CategoryId").html(options);
         })
-        })
+    })
     </script>
 }
