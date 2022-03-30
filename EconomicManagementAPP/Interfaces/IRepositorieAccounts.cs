@@ -10,7 +10,7 @@ namespace EconomicManagementAPP.Repositories
 
         Task<IEnumerable<Accounts>> GetAccounts();
 
-        Task<Accounts> GetAccountsById(int Id);
+        Task<Accounts> GetAccountById(int Id, int userId);
 
         Task<IEnumerable<Accounts>> GetUserAccounts(int id);
 

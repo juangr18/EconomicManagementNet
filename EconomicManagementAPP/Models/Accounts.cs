@@ -14,8 +14,7 @@ namespace EconomicManagementAPP.Models
         public int AccountTypeId { get; set; }
 
         [Required(ErrorMessage = "{0} is required")]
-        [NumberValidate]
-        public string Balance { get; set; }
+        public decimal Balance { get; set; }
 
         [Required(ErrorMessage = "{0} is required")]
         public string Description { get; set; }
