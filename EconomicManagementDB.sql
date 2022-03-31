@@ -84,10 +84,12 @@ CREATE PROCEDURE Categorie_Delete
 @id int
 AS
 BEGIN
-    SET NOCOUNT ON;
-
-  DELETE FROM Transactions where CategoryId = @id
-  DELETE FROM Categories WHERE Id = @id
+	SET NOCOUNT ON;
+		If exists (Select 1 from Transactions where CategoryId = @id )
+		BEGIN 
+			DELETE FROM Transactions where CategoryId = @id
+		END
+		DELETE FROM Categories WHERE Id = @id
 END
 GO
 INSERT INTO OperationTypes 
