@@ -80,3 +80,16 @@ BEGIN
   SELECT SCOPE_IDENTITY();
 END
 GO
+CREATE PROCEDURE Categorie_Delete
+@id int
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+  DELETE FROM Transactions where CategoryId = @id
+  DELETE FROM Categories WHERE Id = @id
+END
+GO
+INSERT INTO OperationTypes 
+		VALUES('Income'),
+				('Expenses');
