@@ -28,7 +28,9 @@ namespace EconomicManagementAPP.Services
         public async Task Delete(int id)
         {
             using var connection = new SqlConnection(connectionString);
-            await connection.ExecuteAsync("DELETE Categories WHERE Id = @Id", new { id });
+            await connection.ExecuteAsync(@"Categorie_Delete", 
+                new { id },
+                commandType: System.Data.CommandType.StoredProcedure);
         }
 
         public async Task<bool> Exist(string Name)
