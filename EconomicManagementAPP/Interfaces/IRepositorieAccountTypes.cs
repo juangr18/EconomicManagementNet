@@ -5,13 +5,15 @@ public interface IRepositorieAccountTypes
 {
     Task Create(AccountTypes accountTypes); // Se agrega task por el asincronismo
 
-    Task<bool> Exist(string Name, int UserId);
+    Task<bool> Exist(string name, int userId);
 
-    Task<IEnumerable<AccountTypes>> getAccounts(int UserId);
+    Task<IEnumerable<AccountTypes>> GetAccounts(int userId);
 
     Task Modify(AccountTypes accountTypes);
 
-    Task<AccountTypes> getAccountById(int id, int userId); // para el modify
+    Task<AccountTypes> GetAccountById(int id, int userId); // para el modify
 
     Task Delete(int id);
+
+    Task Sort(IEnumerable<AccountTypes> accountTypesSorted);
 }

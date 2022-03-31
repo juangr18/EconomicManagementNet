@@ -4,9 +4,9 @@
     ViewData["Title"] = "Account Types";
 }
 
-<h1>Account Types List</h1>
-
-<a asp-action="Create" class="btn btn-primary mb-3">Create account</a>
+<h1>List of Account Types</h1>
+<h5>Account Type refers to how we can group our accounts. For example: Loans, Debit cards, etc.</h5>
+<a asp-action="Create" class="btn btn-primary mb-3">Create new</a>
 
 @if(Model.Any()){
 <table class="table">
@@ -16,7 +16,7 @@
             <th>Name</th>
         </tr>
     </thead>
-    <tbody id="reordenable">
+    <tbody id="sortable">
         @foreach (var accountTypes in Model)
         {
             <tr>
@@ -28,7 +28,6 @@
                 <td>
                     @accountTypes.Name
                 </td>
-
             </tr>
         }
     </tbody>
@@ -38,3 +37,43 @@
         No results
     </h1>
 }
+
+@section Scripts {
+    <script>
+
+    const urlSort = '@Url.Action("sort")';
+      $(function(){
+          $("#sortable").sortable({
+              stop: async function(e, ui){
+                  await updateOrder();
+                }
+            });
+
+          async function updateOrder(){
+              const ids = getFieldsIds();
+              await sentIdsToBackend(ids);
+          }
+
+          function getFieldsIds(){
+              const ids = $(".ids").map(function(){
+                return $(this).val();
+              }).get();
+
+              return ids;
+          }
+
+          async function sentIdsToBackend(ids){
+            var data = JSON.stringify(ids);
+            await fetch(urlSort, {
+                method: 'POST',
+                body: data,
+                headers: {
+                'Content-Type': 'application/json'
+                }
+            });
+
+          }
+
+        })
+    </script>
+  }

@@ -1,5 +1,3 @@
-
-using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EconomicManagementAPP.Models
@@ -10,7 +8,5 @@ namespace EconomicManagementAPP.Models
 
         public IEnumerable<SelectListItem> Categories { get; set; }
 
-        [Display(Name = "Operation Type")]
-        public OperationTypes OperationTypesId { get; set; } = OperationTypes.Income;
     }
 }
