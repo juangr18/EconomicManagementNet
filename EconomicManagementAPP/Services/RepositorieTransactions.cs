@@ -38,26 +38,47 @@ namespace EconomicManagementAPP.Services
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryFirstOrDefaultAsync<Transactions>(@"
-                                                                SELECT Id, UserId, TransactionDate, Total, Description, AccountId, CategoryId
+                                                                SELECT Transactions.*, cat.OperationTypeId
                                                                 FROM Transactions
-                                                                WHERE Id = @Id AND UserID = @UserID",
+                                                                INNER JOIN Categories cat
+                                                                ON cat.Id = Transactions.CategoryId
+                                                                WHERE Transactions.Id = @Id AND Transactions.UserId = @UserId",
                                                                 new { id, userId });
 
         }
 
-        public async Task ModifyTransaction(Transactions transactions)
+        public async Task ModifyTransaction(Transactions transactions,
+                                            decimal previousTotal,
+                                            int previousAccountId)
         {
             using var connection = new SqlConnection(connectionString);
-            await connection.ExecuteAsync(@"Update Transactions
-                    set Total=@Total, Description=@Description
-                        WHERE Id = @Id;", transactions);
+            await connection.ExecuteAsync("Transactions_Update",
+            new
+            {
+                transactions.Id,
+                transactions.TransactionDate,
+                transactions.Total,
+                transactions.CategoryId,
+                transactions.AccountId,
+                transactions.Description,
+                previousTotal,
+                previousAccountId
+            }, commandType: System.Data.CommandType.StoredProcedure);
         }
 
         public async Task Delete(int id)
         {
             using var connection = new SqlConnection(connectionString);
-            await connection.ExecuteAsync("DELETE Transactions WHERE Id = @Id", new { id });
+            await connection.ExecuteAsync("Transaction_Delete",
+                                          new { id }, commandType: System.Data.CommandType.StoredProcedure);
         }
 
+        public async Task<IEnumerable<Transactions>> GetTransactionsByUser(int userId)
+        {
+            using var connections = new SqlConnection(connectionString);
+            return await connections.QueryAsync<Transactions>(@"SELECT * FROM Transactions
+                                                                WHERE UserId = @userId",
+                                                                new { userId });
+        }
     }
 }

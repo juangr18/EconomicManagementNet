@@ -29,8 +29,9 @@ namespace EconomicManagementAPP.Controllers
 
         public async Task<IActionResult> Index()
         {
-
-            return View();
+            var userId = repositorieUsers.GetUserId();
+            var transactions = await repositorieTransactions.GetTransactionsByUser(userId);
+            return View(transactions);
         }
 
         public async Task<IActionResult> Create()
@@ -66,6 +67,7 @@ namespace EconomicManagementAPP.Controllers
         public async Task<IActionResult> Create(CreateTransactionViewModel model)
         {
             var userId = repositorieUsers.GetUserId();
+
             if (!ModelState.IsValid)
             {
                 model.Accounts = await GetAccounts(userId);
@@ -99,56 +101,96 @@ namespace EconomicManagementAPP.Controllers
 
         //Actualizar
         [HttpGet]
-        public async Task<ActionResult> Modify(int Id, int UserId)
+        public async Task<IActionResult> Modify(int id)
         {
-            var transactions = await repositorieTransactions.GetTransactionById(Id, UserId);
+            var userId = repositorieUsers.GetUserId();
+            var transactions = await repositorieTransactions.GetTransactionById(id, userId);
 
             if (transactions is null)
             {
                 return RedirectToAction("NotFound", "Home");
             }
 
-            return View(transactions);
+            var model = mapper.Map<ModifyTransactionViewModel>(transactions);
+
+            if (model.OperationTypesId == OperationTypes.Expenses)
+            {
+                model.PreviousTotal = model.Total * -1;
+            }
+
+            model.PreviousAccountId = transactions.AccountId;
+            model.Categories = await GetCategories(userId, transactions.OperationTypesId);
+            model.Accounts = await GetAccounts(userId);
+
+            return View(model);
         }
 
         [HttpPost]
-        public async Task<ActionResult> Modify(Transactions transactions)
+        public async Task<IActionResult> Modify(ModifyTransactionViewModel model)
         {
-            var transactionsDB = await repositorieTransactions.GetTransactionById(transactions.Id, transactions.UserId);
+            var userId = repositorieUsers.GetUserId();
 
-            if (transactionsDB is null)
+            if (!ModelState.IsValid)
+            {
+                model.Accounts = await GetAccounts(userId);
+                model.Categories = await GetCategories(userId, model.OperationTypesId);
+                return View(model);
+            }
+
+            var account = await repositorieAccounts.GetAccountById(model.AccountId, userId);
+
+            if (account is null)
             {
                 return RedirectToAction("NotFound", "Home");
             }
 
-            await repositorieTransactions.ModifyTransaction(transactions);
+            var category = await repositorieCategories.GetCategorieById(model.CategoryId, userId);
+
+            if (category is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+
+            var transaction = mapper.Map<Transactions>(model);
+
+            model.PreviousTotal = model.Total;
+            if (model.OperationTypesId == OperationTypes.Expenses)
+            {
+                transaction.Total *= -1;
+            }
+
+            await repositorieTransactions.ModifyTransaction(transaction,
+                                                            model.PreviousTotal,
+                                                            model.PreviousAccountId);
             return RedirectToAction("Index");
         }
 
-        //Eliminar Categories
-        public async Task<IActionResult> Delete(int Id, int UserId)
+        public async Task<IActionResult> Delete(int id)
         {
-            var transactions = await repositorieTransactions.GetTransactionById(Id, UserId);
-
-            if (transactions is null)
-            {
-                return RedirectToAction("NotFound", "Home");
-            }
-
-            return View(transactions);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteTransactions(int Id, int UserId)
-        {
-            var transaction = await repositorieTransactions.GetTransactionById(Id, UserId);
+            var userId = repositorieUsers.GetUserId();
+            var transaction = await repositorieTransactions.GetTransactionById(id, userId);
 
             if (transaction is null)
             {
                 return RedirectToAction("NotFound", "Home");
             }
 
-            await repositorieTransactions.Delete(Id);
+            return View(transaction);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteTransaction(int id)
+        {
+
+            var userId = repositorieUsers.GetUserId();
+            var transaction = await repositorieTransactions.GetTransactionById(id, userId);
+
+            if (transaction is null)
+            {
+                return RedirectToAction("NotFound", "Home");
+            }
+
+            await repositorieTransactions.Delete(id);
             return RedirectToAction("Index");
         }
     }
